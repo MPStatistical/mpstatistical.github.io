@@ -52,10 +52,8 @@
         }
         .back-button {
             font-size: 24px;
-            background-color: #333;
             color: #F4EBD9;
             cursor: pointer;
-            padding: 10px;
             border-radius: 50%;
             display: inline-block;
             transition: transform 0.3s ease;
@@ -64,10 +62,8 @@
             transform: scale(1.2);
         }
         .back-button-container {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -101,7 +97,9 @@
         </div>
     </div>
 
-    <div class="back-button" onclick="goBack()">&#8592; Go Back</div>
+    <div class="back-button-container">
+        <div class="back-button" onclick="goBack">&#8592; Go Back</div>
+    </div>
 
     <script>
         function goBack() {
@@ -109,6 +107,7 @@
         }
     </script>
 </body>
+</html>
 
 
 
