@@ -1,49 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handwriting Classifier</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        h1 {
-            color: #333;
-        }
-        #canvas {
-            border: 8px solid #333;
-            margin: 20px auto;
-            display: block;
-        }
-        #canvasimg {
-            display: none;
-        }
-        #sb, #cb {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        #sb:hover, #cb:hover {
-            background-color: #555;
-        }
-    </style>
-</head>
-<body>
-    <h1>Handwriting Classifier</h1>
-    <canvas id="canvas" width="280" height="280"></canvas>
-    <img id="canvasimg" style="position: absolute; top: 10%; left: 52%; width: 280px; height: 280px; display: none;">
-    <input type="button" value="Classify" id="sb">
-    <input type="button" value="Clear" id="cb">
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+
+</head>
+<body>
+    <h1>Handwriting Classifier!</h1>
+    <canvas id="canvas" width="280" height="280" style="position:absolute;top:100;left:100;border:8px solid;"></canvas>
+    <img id="canvasimg" style="position:absolute;top:10%;left:52%;width=280;height=280;display:none;">
+    <input type="button" value="classify" id="sb" size="48" style="position:absolute;top:400;left:100;">
+    <input type="button" value="clear" id="cb" size="23" style="position:absolute;top:400;left:180;">
     <script src="data.js" type="module"></script>
     <script src="script.js" type="module"></script>
 </body>
